@@ -170,3 +170,324 @@ main .headsection .div1{
     line-height: 1;
 
 }
+
+.middlesection{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    background-color: purple;
+    height: 392px;
+}
+
+.middlesection .blockquote{
+    /* margin: 0px; */
+    padding: 0;
+    width: 530px;
+    height: 158px;
+    gap: 0;
+
+}
+.middlesection div{
+    /* display: flex; */
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 100px;
+    color: white;
+    font-weight: 900;
+}
+
+
+.tutorial{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tutorialrow{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.tutorial_section {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 335px;
+    margin-bottom: 70px;
+    position: relative;
+
+
+}
+.tutorial_section .image2{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    mix-blend-mode: overlay;
+    opacity: 0.9;
+    transform: translate(100%, 50%);
+
+}
+
+.tutorial_section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.tutorial_section div img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.freemembershead{
+    /* display: block; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    
+}
+.freemembersrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+
+
+}
+
+.freemembersrow div{
+    height: 153px;
+    width: 257px;
+    margin-left: 35px;
+}
+
+.freemembers{
+    background-color: #071629;
+    height:502px;
+    color: white;
+
+}
+.freemembershead button {
+    margin-top: -50px;
+    padding: 25px;
+    border-radius: 25px 25px 25px 25px;
+    border: transparent;
+    background-color: purple;
+    color: white;
+}
+.freemembers h2{
+    display: block;
+    white-space: nowrap;
+} 
+
+.faqheader{
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+}
+.sec1 div {
+    width: 350px;
+    /* height: 242px;  */
+    margin: 0;
+    padding-left: 130px;
+    padding-top: 0;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.sec1 {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}  
+.footersection{
+    background-color: #071629;
+    margin-top: 10%;
+}
+
+.footerdiv{
+    display: flex;
+    justify-content: space-between;
+    height: 249px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  
+}
+.footerdiv div{
+    color: white;
+}
+.footerdiv div img .smileface{
+    padding-top: 20%;
+}
+.footerparagraph{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    padding-bottom: 25px;
+}
+
+footer .footersection .footerdiv div img{
+    filter: brightness(0) invert(1);
+
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+/* General styles apply to all screen sizes */
+
+/* Extra Small Devices (Phones, < 576px) */
+@media (max-width: 575.98px) {
+    header {
+      padding: 10px 20px;
+    }
+    header nav ul {
+      flex-direction: column; /* Stack navigation items */
+      gap: 15px;
+    }
+    .headsection .div1 h1 {
+      font-size: 48px;
+      line-height: 60px;
+      width: 100%; /* Make it responsive */
+      margin-top: 200px;
+    }
+    .headsection .div1 button {
+      width: 120px;
+      height: 40px;
+    }
+    .middlesection {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+    .tutorial_section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .freemembersrow {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+
+
+  /* Small Devices (Tablets, 576px to 767.98px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+      padding: 15px 30px;
+    }
+    header nav ul {
+      gap: 20px;
+    }
+    .headsection .div1 h1 {
+      font-size: 64px;
+      line-height: 80px;
+      width: 100%;
+      margin-top: 250px;
+    }
+    .middlesection {
+      flex-direction: column;
+      height: auto;
+    }
+    .tutorial_section {
+      width: 45%; /* Two columns */
+    }
+    .freemembersrow {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  
+  /* Medium Devices (Laptops, 768px to 991.98px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    header {
+      padding: 20px 40px;
+    }
+    .headsection .div1 h1 {
+      font-size: 80px;
+      line-height: 100px;
+      margin-top: 300px;
+    }
+    .middlesection {
+      height: 300px;
+    }
+    .tutorial_section {
+      width: 30%; /* Three columns */
+    }
+    .freemembersrow {
+      gap: 25px;
+    }
+  }
+  
+  /* Large Devices (Desktops, 992px to 1199.98px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    header {
+      padding: 20px 50px;
+    }
+    .headsection .div1 h1 {
+      font-size: 100px;
+      line-height: 120px;
+      margin-top: 350px;
+    }
+    .tutorial_section {
+      width: 25%;
+    }
+    .freemembersrow div {
+      height: 200px;
+      width: 300px;
+    }
+  }
+  
+  /* Extra Large Devices (Large Desktops, >= 1200px) */
+  @media (min-width: 1200px) {
+    header {
+      padding: 20px 60px;
+    }
+    .headsection .div1 h1 {
+      font-size: 120px;
+      line-height: 150px;
+      margin-top: 400px;
+    }
+    .tutorial_section {
+      width: 20%;
+    }
+    .freemembersrow div {
+      height: 250px;
+      width: 350px;
+    }
+  }
+  
