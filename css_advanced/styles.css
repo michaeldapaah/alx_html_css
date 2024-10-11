@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('~/source-sans-pro.woff') format('woff'),
+         url('~/source-sans-pro.ttf') format('truetype');
+}
+
+/* header styling */
+/* General Header Styling */
+header {
+    background: transparent;
+    padding: 20px 50px; /* Add spacing inside the header */
+    color: white; /* Set text color to white */
+    position: relative; /* Ensure proper layering */
+    z-index: 10; /* Keep header on top */
+    
+}
+
+/* Navigation Container */
+header nav {
+    display: flex; /* Arrange items in a horizontal row */
+    justify-content: space-between; /* Space out logo and menu */
+    align-items: center; /* Align items vertically in the center */
+    
+}
+
+header nav div{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div #smileface {
+    height: 10px;
+    width: 30px;
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+}
+/* Logo Styling */
+header nav img {
+    height: 12.58px; /* Adjust logo size */
+    width: 111.83px;
+    cursor: pointer; /* Make the logo clickable */
+}
+
+/* Navigation Menu */
+header nav ul {
+    display: flex; /* Arrange list items horizontally */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    gap: 30px; /* Add space between list items */
+    font-family: 'MyCustomFont';
+}
+
+/* Navigation Links */
+header nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color to white */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.headsection .div1{
+    background-image: url('Object.png');
+    margin-top: -65px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.headsection .div1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.headsection .div1 div{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.headsection .div1 h1{
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150.84px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    width: 684px;
+    height: 151px;
+    color: white;
+}
+
+main .headsection .div1{
+    display: flex;
+    font-family: 'MyCustomFont';
+    /* justify-content: center; */
+    align-items: center;
+    
+    
+}
+
+.headsection .div1 div{
+    margin-top: 0px;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    background: transparent;
+}
+
+.headsection .div1 button{
+    padding: 5px;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    border-radius: 25px 25px;
+    width: 162px;
+    height: 44px;
+    font-size: 12px;
+    background-color: purple;
+    border: transparent;
+    color: white;
+    
+
+}
